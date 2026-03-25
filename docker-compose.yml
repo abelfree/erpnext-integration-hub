@@ -1,0 +1,8 @@
+services:
+  integration-hub:
+    build: .
+    container_name: integration-hub
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env.example
